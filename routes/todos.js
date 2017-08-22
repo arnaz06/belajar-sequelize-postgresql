@@ -7,10 +7,8 @@ var todosController = require('../controllers').todos
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
 
-router.post('/api/todos',todosController.create)
+
+router.post('/api',todosController.create)
 
 module.exports = router;
