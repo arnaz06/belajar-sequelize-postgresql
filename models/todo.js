@@ -1,8 +1,10 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Todo = sequelize.define('Todo', {
-    title: DataTypes.STRING,
-    allowNull: true,
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   }, {
     classMethods: {
       associate: function(models) {

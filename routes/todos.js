@@ -9,6 +9,6 @@ var todosController = require('../controllers').todos
 /* GET home page. */
 
 
-router.post('/api',todosController.create)
-
+router.post('/api/create/',todosController.create)
+router.get('/api/index/',todosController.index)
 module.exports = router;
