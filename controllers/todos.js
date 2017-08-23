@@ -17,7 +17,9 @@ module.exports = {
       .then(function(todo) {
         res.status(201).send(todo)
       })
-      .catch(error => res.status(400).send(error))
+      .catch(function(error){
+       res.status(400).send(error)
+      })
 
   }
 }
